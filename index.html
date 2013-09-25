@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>Bootstrap 101 Template</title>
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+    <div></div>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- navバー --><h1 class="container">↑ navbar</h1>
+    <div class="container">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <!-- navbarのヘッダー  -->
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="">the Future</a>
+            </div>
+
+            <div class="collapse navbar-collapse target">
+
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="">about</a></li>
+                    <li><a href="">name</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Recruit</a></li>
+                </ul>
+
+                <!-- リンクの一部を右側に飛ばす -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="">Link3</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+
+
+
+    <h1 class="container">Hello, world!</h1><br>
+
+
+    <!-- GRID --><h1 class="container">GRID</h1>
+
+    <div id="header" class="container" style="background:red">header</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 hidden-xs"style="background:pink;">Side1</div>
+            <div class="col-sm-6 col-xs-6" style="background:orange;">Main</div>
+            <div class="col-sm-3 col-xs-6" style="background:green;">Side2</div>
+        </div><!-- row -->
+    </div><!-- container -->
+    <div id="footer" class="container" style="background:blue">footer</div>
+    <br>
+
+
+
+    <!-- TABLE --><h1 class="container">TABLE</h1>
+    <div class="container" style="padding=20px margin=20px">
+        <table class="table table-striped table-bordered table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th>ID</th><th>SCORE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Ryoh</td><td>3232</td></tr>
+                <tr class="warning"><td>nix</td><td>44</td></tr>
+                <tr><td>nothing</td><td>232</td></tr>   
+            </tbody>
+        </table>
+    </div><!-- container -->
+
+
+
+
+    <!-- E-Mail ERROR --><h1 class="container">ERROR</h1>       
+    <form class="container">
+
+        <div class="form-group has-error">
+
+            <label class="control-label" for="email">Email</label>
+            <input type="text" id="email" class="form-control" placeholder="e-mail">
+            <!-- <span class="help-block">※Error occured</span> -->
+        </div><!-- form-group -->
+
+        <div class="form-group">
+            <input type="submit" value="submit" class="btn btn-primary">
+        </div><!-- form-group -->
+    </form>
+    <br>
+
+
+
+
+    <!-- E-Mail 1--><h1 class="container">E-mail 1</h1>
+    <div class="container" style="padding:20px 0">
+
+        <form　class="form-inline" style="margin-bottom:15px">
+
+            <div class="form-group">
+                <label class="sr-only control-label" for="email">Email</label>
+                <input type="text" id="email" class="form-control" placeholder="e-mail">
+            </div><!-- form-group --> 
+
+            <div class="form-group">
+                <input type="submit" value="submit" class="btn btn-primary">
+            </div><!-- form-group --> 
+        </form>
+        <br>
+    </div><!-- container --> 
+
+
+
+
+    <!-- E-Mail 2--><h1 class="container">E-mail 2</h1>
+    <div class="container" style="padding:20px 0">
+        <form class="form-horizontal" style="margin-bottom:15px">
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Name</label>
+                <div class="col-sm-4">
+                    <input type="text" id="email" class="form-control" placeholder="name">
+                </div>
+            </div><!-- form-group --> 
+
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email</label>
+                <div class="col-sm-4">
+                    <input type="text" id="email" class="form-control" placeholder="email">
+                </div>
+            </div><!-- form-group --> 
+
+
+            <!-- submit ボタン -->
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-4">
+                    <input type="submit" value="submit" class="btn btn-primary">
+                </div>
+            </div><!-- form-group --> 
+        </form>
+    </div><!-- container --> 
+
+
+
+
+
+    <!-- I CONS & Buttons --> <h1 class="container">I CONS & BUTTONS</h1>
+    <div class="container">
+
+        <!-- アイコン -->
+        <p><i class="glyphicon glyphicon-book"></i> Book</p>
+        <p><i class="glyphicon glyphicon-film"></i> Movie</p>
+
+
+        <!-- ボタン -->
+        <div>
+            <button class="btn btn-primary">Push Me!</button>
+            <button class="btn btn-primary"><i class="glyphicon glyphicon-book"></i> Push Me!</button>
+        </div>
+        <br>
+
+        <!-- ボタン カラフル -->
+        <div>
+            <button class="btn btn-warning">Push Me!</button>
+            <button class="btn btn-success">Push Me!</button>
+            <button class="btn btn-info">Push Me!</button>
+        </div>
+        <br>
+
+        <!-- ボタングループ化 -->
+        <div class="btn-group">
+            <button class="btn btn-warning">Push Me!</button>
+            <button class="btn btn-danger">Push Me!</button>
+            <button class="btn btn-info">Push Me!</button>
+        </div><!-- btn-group -->
+        <br>
+        <br>
+
+        <!-- ボタングループ大-->
+        <div class="btn-group btn-group-lg">
+            <button class="btn btn-warning">Push Me!</button>
+            <button class="btn btn-danger">Push Me!</button>
+            <button class="btn btn-info">Push Me!</button>
+        </div><!-- btn-group -->
+        <br>
+    </div><!-- container --> 
+    <br>
+
+
+    <!-- dropdown button 1 --><h1 class="container">dropdown button 1 </h1>
+    <div class="container">
+        <div class="btn-group">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Action<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="">Action</a></li>
+                <li><a href="">Action</a></li>
+                <li><a href="">Action</a></li>
+                <li class="divider">Action</a></li>
+                <li><a href="">Action</a></li>
+                <li><a href="">Action</a></li>
+                <li><a href="">Action</a></li>
+            </ul>
+        </div>
+    </div><!-- container --> 
+    <br>
+
+
+
+    <!-- dropdown button 2 --><h1 class="container">dropdown button 2 </h1>
+    <div class="container">
+        <div class="btn-group">
+            <button class="btn btn-primary">Action</button>
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="">Action</a></li>
+                <li><a href="">Action</a></li>
+                <li><a href="">Action</a></li>
+                <li class="divider">Action</a></li>
+                <li><a href="">Action</a></li>
+                <li><a href="">Action</a></li>
+                <li><a href="">Action</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+
+
+    <!-- パン屑リスト --><h1 class="container">パン屑リスト </h1>
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="">HOME</a></li>
+            <li><a href="">Users</a></li>
+            <li><a href="">@toguchi</a></li>
+        </ul>
+    </div>
+    <br>
+
+
+    <!-- ページング機能 --><h1 class="container">ページング機能 </h1>
+    <div class="container">
+        <ul class="pagination">
+            <li class="disabled"><a href="">&laquo</a></li>
+            <li class="active"><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">&raquo</a></li>
+        </ul>
+    </div>
+    <br>
+
+
+    <!-- 前へ/次へボタン --><h1 class="container">前へ/次へボタン </h1>
+    <div class="container">
+        <ul class="pager">
+            <li class="previous"><a href="">前へ</a></li>
+            <li class="next"><a href="">次へ</a></li>
+        </ul>
+    </div>
+    <br>
+
+
+
+
+
+
+    <!-- ラベル --><h1 class="container">Label </h1>
+    <div class="container" style="padding:20px 0">
+        <p>Product A <span class="label label-info">NEW!</span></p>
+        <p>Product A <span class="label label-warning">NEW!</span></p>
+        <p>Product A <span class="label label-danger">NEW!</span></p>
+        <p>Product A <span class="label label-success">NEW!</span></p>
+        <p>Product A <span class="label label-primary">NEW!</span></p>
+    </div>
+
+
+
+
+    <!-- バッジ --><h1 class="container">Badge </h1>
+    <div class="container" style="padding:20px 0">
+        <p>Inbox <span class="badge">5</span></p>
+        <p>Inbox <span class="badge"></span></p>
+    </div>
+
+
+
+    <!-- アラート --><h1 class="container">Alert </h1>
+    <div class="container" style="padding:20px 0">
+        <div class="alert alert-info">
+            <p>Inbox <span class="badge" >5</span></p>
+            <p>Inbox <span class="close" data-dismiss="alert">&times</span></p>
+        </div>
+    </div>
+
+
+    <!-- パネル --><h1 class="container">Panel </h1>
+    <div class="container" style="padding:20px 0">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                お知らせ
+            </div>
+            <div class="panel-body">
+                こんにちは
+            </div>
+        </div>
+    </div><!-- container -->
+
+
+
+     <!-- プログレス --><h1 class="container">Progress </h1>
+    <div class="container" style="padding:20px 0">
+
+        <!-- プレーン プログレスバー -->
+        <div class="progress">
+            <div class="progress-bar progress-bar-primary" style="width:60%"></div>
+        </div>
+
+
+        <!-- Stripe プログレスバー -->
+        <div class="progress progress-striped">
+            <div class="progress-bar progress-bar-danger" style="width:60%"></div>
+        </div>
+
+
+        <!-- Stripe アクティブ プログレスバー -->
+        <div class="progress progress-striped active">
+            <div class="progress-bar progress-bar-primary" style="width:30%"></div>
+        </div>
+
+        <!-- 3種類 Stripe アクティブ プログレスバー  -->
+        <div class="progress progress-striped active">
+            <div class="progress-bar progress-bar-primary" style="width:40%"></div>
+            <div class="progress-bar progress-bar-info"    style="width:30%"></div>
+            <div class="progress-bar progress-bar-warning" style="width:20%"></div>
+        </div>
+    </div><!-- container -->   
+
+
+
+    <!-- モーダル --><h1 class="container">Modal </h1>
+    <div class="container">
+        
+        <a data-toggle="modal" href="#myModal" class="btn btn-primary">Show me!</a>
+
+        <div class="modal fade" id="myModal">
+
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    
+                    <!-- ヘッダー -->
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">My Modal</h4>
+                    </div>
+                    
+                    <!-- ボディ -->
+                    <div class="modal-body">
+                        こんにちは！
+                    </div>
+
+                    <!-- フッター -->
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">OK!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- container -->
+    <br/>
+
+
+
+
+
+    <!-- タブ --><h1 class="container">Tab</h1>
+    <div class="container">
+
+        <ul class="nav nav-tabs" style="margin-bottom:15px;">
+            <li><a class="active" href="#home" data-toggle="tab">Home</a></li>
+            <li><a href="#about"    data-toggle="tab">About</a></li>
+            <li><a href="#product"  data-toggle="tab">Product</a></li>
+            <li><a href="#team"     data-toggle="tab">Team</a></li>
+            <li><a href="#recruit"  data-toggle="tab">Recruit</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane" id="home">ホーム</div>
+            <div class="tab-pane" id="about">アバウト</div>
+            <div class="tab-pane" id="product">プロダクト</div>
+            <div class="tab-pane" id="team">チーム</div>
+            <div class="tab-pane" id="recruit">リクルート</div>
+        </div>
+    </div><!-- container -->    
+
+
+
+
+
+    <!-- ツールチップ --><h1 class="container">ToolTip & Popover </h1>
+    <div class="container" style="padding:20px 0">
+        <p><a href="#" data-toggle="tooltip" title="説明">this</a> and <a href="#" data-toggle="popover" title="説明" data-content="さらに説明">that</a></p>
+    </div><!-- container -->
+
+
+
+
+
+    <!-- Jumbotron --><h1 class="container">Jumbotron </h1>
+    <div class="container" style="padding:20px 0">
+        <div class="jumbotron">
+          <div class="container">
+            <h1>Hello, world!</h1>
+            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+          </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ListGroup --><h1 class="container">ListGroup</h1>
+    <div class="container" style="padding:20px 0">
+        <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+    </div>
+
+
+
+
+
+    <!-- Carousel --><h1 class="container"> Carousel</h1>
+    <div class="container" style="padding:20px 0">
+        <div id="carousel-example-generic" class="carousel slide">
+            
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" >
+                <div class="item active">
+                    <img src="photo5.jpg">
+                    <div class="carousel-caption">
+                    <h1>THIS IS PHONE</h1>
+                    </div>
+                </div>
+                <div class="item"><img src="photo5.jpg"></div>
+                <div class="item"><img src="photo3.jpg"></div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+    </div>
+    </div>
+
+<div>test</div>
+<div>test</div>
+<div>test</div>
+<div>test</div>
+<div>test</div>
+<div>test</div>
+<div>test</div>
+<div>test</div>
+<div>test</div>
+<div>test</div>
+<div>test</div>
+<div>test</div>
+<div>test</div>
+<div>test</div>
+<div>test</div>
+<div>test</div>
+<div>test</div>
+<div>test</div>
+
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $("[data-toggle=tooltip]").tooltip({
+                placement: 'bottom'
+            });
+            $("[data-toggle=popover]").popover();
+        });
+    </script>
+
+    <script>
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    </script>
+</body>
+</html>
+
